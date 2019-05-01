@@ -7,6 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <form>
+    <label for="numeros">Ingrese un número</label>
+    <input
+      name="numeros"
+      type="text"
+      required
+      pattern="^[1-9]{3}$"
+      title="Solo puede ingresar 3 números"
+      ><br>
+    <label for="string">Ingrese una cadena de texto</label>
+    <input
+      name="string"
+      type="text"
+      required
+      pattern="^[a-zA-Z]{5,10}$"
+      title="Puede ingresar únicamente letras"
+      ><br>
+    <input type="submit" value="Aceptar">
+  </form>
 </body>
 </html>
