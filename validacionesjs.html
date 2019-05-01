@@ -17,14 +17,15 @@
 	<script type="text/javascript" src="jquery-3.4.0.js"></script>
 
 	<script type="text/javascript">
-		$('#acciote').onclick(function(){
+		$('#acciote').click(function(){
+
 			var te = document.getElementById('valitext').value;
 		   if(te==null|| te.length==0|| /^\s+$/.test(te)){
 		   	return false;
-		   	console.log('si es texto');
+		   	 alert("Escriba texto");
 		   	}
 		   	else{
-		   		console.log('era numero u otra cosa');
+		   		alert('fue Correcot');
 		   	}
 		   
 
