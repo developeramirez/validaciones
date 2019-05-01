@@ -4,6 +4,33 @@
 	<title>Validaciones Javascript</title>
 </head>
 <body>
-	<input type="text" name="txtName">
+	<form>
+		<input type="text" name="txtName" placeholder="Ingrese Texto" id="valitext"><br><br>
+		<button id="acciote">Validar Texto</button><br><br><br>
+		<input type="text" name="txtNume" placeholder="Ingrese Numero" id="valinum"><br><br>
+		<button id="accionu">Validar  Numero</button>
+
+
+
+	</form>
+
+	<script type="text/javascript" src="js/jquery-3.4.0.js"></script>
+
+	<script type="text/javascript">
+		$('#acciote').onclick(function(){
+			var te = document.getElementById('valitext').value;
+		   if(te==null|| te.length==0|| /^\s+$/.test(te)){
+		   	return false;
+		   	console.log('si es texto');
+		   	}
+		   	else{
+		   		console.log('era numero u otra cosa');
+		   	}
+		   
+
+		});
+		
+
+	</script>
 </body>
 </html>
